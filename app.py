@@ -1,8 +1,8 @@
 from flask import Flask
-import requests
+from model import *
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    response = requests.get('https://httpbin.org/ip')
-    return 'Your IP is {0}'.format(response.json()['origin'])
+    
+    return 'Your IP is {0}'.format(eur_to_usd_rate)
