@@ -6,6 +6,7 @@ response = requests.get('https://openexchangerates.org/api/latest.json?app_id=' 
 
 eur_to_usd_rate = response.json()['rates']['EUR']
 gbp_to_usd_rate = response.json()['rates']['GBP']
+yen_to_usd_rate = response.json()['rates']['JPY']
 
 def convert(amount, exchange_rate):
     return amount / exchange_rate

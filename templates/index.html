@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Ned Ned's Cheese Emporium</title>
-    </head>
-    <body>
-        <h1>Ned Ned's Cheese Emporium</h1>
-        <p>Today you can buy {{ cheese_amount }} blocks of cheese for £19.99 🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀.</p>
-    </body>
-</html>
+<h2>Choose Your Country</h2>
+
+<a href="{{ url_for('shop') }}">
+<img src="/static/UK_flag.png" width="250">
+</a>
+<a href="{{ url_for('shop_japan') }}">
+<img src="/static/Japan_flag.jpg" width="250">
+</a>
