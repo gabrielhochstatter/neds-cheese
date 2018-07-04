@@ -16,5 +16,5 @@ def shop():
 
 @app.route('/shop_japan')
 def shop_japan():
-    cheese_amount = calculate_cheese(19.99, 3.24, gbp_to_usd_rate, eur_to_usd_rate)
+    cheese_amount = calculate_cheese(4000, 3.24, yen_to_usd_rate, eur_to_usd_rate)
     return render_template('shop.html', cheese_amount=cheese_amount)
